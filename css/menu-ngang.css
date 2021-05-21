@@ -13,5 +13,14 @@
 }
 .trang-thong-tin{
 	display: flex;
-	
+	align-items: center;
+}
+
+.nhap-tim-kiem{
+	outline: none;
+	border: none;
+	padding: 8px 24px;
+	margin: 0 -12px;
+	border-radius: 5px;
+	font-weight: bold;
 }
