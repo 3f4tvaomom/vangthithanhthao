@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vàng Thị Thanh Thảo</title>
-	<link rel="icon" href="./img/logo.jpg">
+	<link rel="icon" href="./img/icon.jpg">
 
 	<link rel="stylesheet" href="./css/grid.css">
 	<link rel="stylesheet" href="./css/menu-ngang.css">
@@ -12,33 +12,30 @@
 </head>
 <body>
 	<header class="header">
-		<div class="grid wide">
-			<div class="row">
-				<div class="col l-3">
-					<div class="logo">DU LỊCH CHÂU Á</div>
-				</div>
-				<ul class="col trang-thong-tin">
+		<div class="grid wide thanh-chua">
+				<img class="logo" src="./img/logo.jpg">
+
+				<ul class="trang-thong-tin">
 					<li class="thong-tin">
-						<a href="../">Trang chủ</a>
+						<a class="thong-tin-link" href="../">Trang chủ</a>
 					</li>
 					<li class="thong-tin">
-						<a href="">Nhà nghỉ</a>
+						<a class="thong-tin-link" href="">Nhà nghỉ</a>
 					</li>
 					<li class="thong-tin">
-						<a href="">Khách sạn</a>
+						<a class="thong-tin-link" href="">Khách sạn</a>
 					</li>
 					<li class="thong-tin">
-						<a href="">Địa điểm</a>
+						<a class="thong-tin-link" href="">Địa điểm</a>
 					</li>
 					<li class="thong-tin">
-						<a href="">Thông tin</a>
+						<a class="thong-tin-link" href="">Thông tin</a>
 					</li>
 				</ul>
-				<form class="col thanh-tim-kiem">
-					<input class="nhap-tim-kiem" type="text" name="tim" placeholder="Nhập để tìm kiếm thông tin...">
-					<input class="nhap-tim-kiem" type="submit" value="Tìm kiếm">
+				<form class="thanh-tim-kiem">
+					<input class="nhap-tim-kiem" id="i_btn" type="text" name="tim" placeholder="Nhập để tìm kiếm thông tin...">
+					<input disabled id="s_btn" class="s_btn nhap-tim-kiem" type="submit" value="Tìm kiếm">
 				</form>
-			</div>
 		</div>
 	</header>
 
@@ -121,5 +118,6 @@
 	</div>
 
 	<div class="footer"></div>
+	<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
