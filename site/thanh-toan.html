@@ -4,10 +4,120 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Vàng Thị Thanh Thảo</title>
+	<link rel="icon" href="../img/icon.jpg">
+
+	<link rel="stylesheet" href="../css/grid.css">
+	<link rel="stylesheet" href="../css/menu-ngang.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<header class="header"></header>
-	<div class="body"></div>
+	<header class="header">
+		<div class="grid wide thanh-chua">
+				<img class="logo" src="../img/logo.jpg">
+
+				<ul class="trang-thong-tin">
+					<li class="thong-tin">
+						<a class="thong-tin-link" href="../">Trang chủ</a>
+					</li>
+					<li class="thong-tin">
+						<a class="thong-tin-link" href="">Nhà nghỉ</a>
+					</li>
+					<li class="thong-tin">
+						<a class="thong-tin-link" href="">Khách sạn</a>
+					</li>
+					<li class="thong-tin">
+						<a class="thong-tin-link" href="">Địa điểm</a>
+					</li>
+					<li class="thong-tin">
+						<a class="thong-tin-link" href="">Thông tin</a>
+					</li>
+				</ul>
+				<form class="thanh-tim-kiem">
+					<input class="nhap-tim-kiem" id="i_btn" type="text" name="tim" placeholder="Nhập để tìm kiếm thông tin...">
+					<input disabled id="s_btn" class="s_btn nhap-tim-kiem" type="submit" value="Tìm kiếm">
+				</form>
+		</div>
+	</header>
+
+	<div class="body">
+		<div class="grid wide">
+			<div class="row">
+				<div class="col m-12">
+					<div class="banner"></div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="col tim-kiem-dm">
+					<h2>Tìm kiếm</h2>
+					<li class="tim-kiem">
+						<h3>Địa điểm</h3>
+						<ul class="tim-kiem-dia-diem">
+							<li class="gia">
+								<a href="">Việt Nam</a>
+							</li>
+							<li class="gia">
+								<a href="">Trung Quốc</a>
+							</li>
+							<li class="gia">
+								<a href="">Lào</a>
+							</li>
+							<li class="gia">
+								<a href="">Thái Lan</a>
+							</li>
+							<li>
+								<form class="col thanh-tim-kiem">
+									<input type="text" name="tim" placeholder="Tìm địa điểm">
+									<input type="submit" value="Tìm kiếm">
+								</form>
+							</li>
+						</ul>
+					</li>
+					
+					<li class="tim-kiem">
+						<h3>Theo gói</h3>
+						<ul class="tim-kiem-goi">
+							<li>
+								<form class="col thanh-tim-kiem">
+									<input type="text" name="tim" placeholder="Tìm gói">
+									<input type="submit" value="Tìm kiếm">
+								</form>
+							</li>
+						</ul>
+					</li>
+
+					<li class="tim-kiem">
+						<h3>Theo giá</h3>
+						<ul class="tim-kiem-gia">
+							<li class="gia">
+								<a href="">từ: 100k - 500k</a>
+							</li>
+							<li class="gia">
+								<a href="">từ: 500k - 1tr</a>
+							</li>
+							<li class="gia">
+								<a href="">từ: 1tr - 2tr</a>
+							</li>
+							<li class="gia">
+								<a href="">từ: 200k - 4tr</a>
+							</li>
+							<form class="tim-gia">
+								<h5>Chọn mức giá khác</h5>
+								<label>từ: </label>
+								<input type="text" name="from" placeholder="từ giá...">
+								<label> - </label>
+								<input type="text" name="to" placeholder="đến giá...">
+								<input type="submit" value="tìm kiếm">
+							</form>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="col"></div>
+			</div>
+		</div>
+	</div>
+
 	<div class="footer"></div>
+	<script type="text/javascript" src="../js/main.js"></script>
 </body>
 </html>
