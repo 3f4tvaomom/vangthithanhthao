@@ -8,8 +8,11 @@
 
 	<link rel="stylesheet" href="./css/grid.css">
 	<link rel="stylesheet" href="./css/menu-ngang.css">
+	<link rel="stylesheet" href="./css/menu-doc.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -21,19 +24,19 @@
 				
 				<ul class="trang-thong-tin">
 					<li class="thong-tin">
-						<a class="thong-tin-link" href="../">Trang chủ</a>
+						<a class="tim-kiem-link" class="thong-tin-link" href="../">Trang chủ</a>
 					</li>
 					<li class="thong-tin">
-						<a class="thong-tin-link" href="">Nhà nghỉ</a>
+						<a class="tim-kiem-link" class="thong-tin-link" href="">Nhà nghỉ</a>
 					</li>
 					<li class="thong-tin">
-						<a class="thong-tin-link" href="">Khách sạn</a>
+						<a class="tim-kiem-link" class="thong-tin-link" href="">Khách sạn</a>
 					</li>
 					<li class="thong-tin">
-						<a class="thong-tin-link" href="./site/dia-diem-du-lich.html">Địa điểm</a>
+						<a class="tim-kiem-link" class="thong-tin-link" href="./site/dia-diem-du-lich.html">Địa điểm</a>
 					</li>
 					<li class="thong-tin">
-						<a class="thong-tin-link" href="">Thông tin</a>
+						<a class="tim-kiem-link" class="thong-tin-link" href="">Thông tin</a>
 					</li>
 				</ul>
 				<form class="thanh-tim-kiem">
@@ -51,78 +54,106 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="row">
-				<ul class="col tim-kiem-dm">
-					<h2>Tìm kiếm</h2>
+				<ul class="col l-3 m-0 c-0 danh-muc-tk">
+					<div class="tieu-de">Danh sách tìm kiếm</div>
 					<li class="tim-kiem">
-						<h3>Địa điểm</h3>
+						<div class="tieude-dm">Các địa điểm du lịch</div>
 						<ul class="tim-kiem-dia-diem">
 							<li class="gia">
-								<a href="">Việt Nam</a>
+								<a class="tim-kiem-link" href="">Việt Nam</a>
 							</li>
 							<li class="gia">
-								<a href="">Trung Quốc</a>
+								<a class="tim-kiem-link" href="">Trung Quốc</a>
 							</li>
 							<li class="gia">
-								<a href="">Lào</a>
+								<a class="tim-kiem-link" href="">Lào</a>
 							</li>
 							<li class="gia">
-								<a href="">Thái Lan</a>
+								<a class="tim-kiem-link" href="">Thái Lan</a>
 							</li>
 							<li>
-								<form class="col thanh-tim-kiem">
-									<input type="text" name="tim" placeholder="Tìm địa điểm">
-									<input type="submit" value="Tìm kiếm">
+								<form class="col thanh-tim-kiem-dl">
+									<input class="nhap-goi" type="text" name="tim" placeholder="Tìm địa điểm">
+									<input class="btn-tim-kiem" type="submit" value="Tìm kiếm">
 								</form>
 							</li>
 						</ul>
 					</li>
 					
 					<li class="tim-kiem">
-						<h3>Theo gói</h3>
+						<div class="tieude-dm">Theo gói</div>
 						<ul class="tim-kiem-goi">
 							<li>
-								<form class="col thanh-tim-kiem">
-									<input type="text" name="tim" placeholder="Tìm gói">
-									<input type="submit" value="Tìm kiếm">
+								<form class="col thanh-tim-kiem-dl">
+									<input class="nhap-goi" type="text" name="tim" placeholder="Tìm gói">
+									<input class="btn-tim-kiem" type="submit" value="Tìm kiếm">
 								</form>
 							</li>
 						</ul>
 					</li>
 
 					<li class="tim-kiem">
-						<h3>Theo giá</h3>
+						<div class="tieude-dm">Theo giá</div>
 						<ul class="tim-kiem-gia">
 							<li class="gia">
-								<a href="">từ: 100k - 500k</a>
+								<a class="tim-kiem-link" href="">từ: 100k - 500k</a>
 							</li>
 							<li class="gia">
-								<a href="">từ: 500k - 1tr</a>
+								<a class="tim-kiem-link" href="">từ: 500k - 1tr</a>
 							</li>
 							<li class="gia">
-								<a href="">từ: 1tr - 2tr</a>
+								<a class="tim-kiem-link" href="">từ: 1tr - 2tr</a>
 							</li>
 							<li class="gia">
-								<a href="">từ: 200k - 4tr</a>
+								<a class="tim-kiem-link" href="">từ: 200k - 4tr</a>
 							</li>
 							<form class="tim-gia">
-								<h5>Chọn mức giá khác</h5>
+								<div>Nhập mức giá khác</div>
 								<label>từ: </label>
-								<input type="text" name="from" placeholder="từ giá...">
-								<label> - </label>
-								<input type="text" name="to" placeholder="đến giá...">
-								<input type="submit" value="tìm kiếm">
+								<input class="nhap-gia" type="text" name="from" placeholder="từ...">
+								<label>- -</label>
+								<input class="nhap-gia" type="text" name="to" placeholder="đến...">
+								<input class="btn-tim-kiem" type="submit" value="tìm kiếm">
 							</form>
 						</ul>
 					</li>
 				</ul>
 
-				<div class="col"></div>
+				<div class="col l-9">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas enim quis deserunt dolores quo perspiciatis omnis voluptatibus sed laboriosam, harum repellat magnam in hic minima asperiores a natus, aliquid voluptatem!
+					Unde sapiente libero id distinctio porro facilis, fugiat doloribus illo pariatur tempore culpa inventore iure quam, reiciendis. Nesciunt debitis eveniet obcaecati, assumenda itaque, doloribus minus temporibus corrupti, voluptates, qui quibusdam?
+					Nesciunt sequi obcaecati placeat, nisi quae quaerat explicabo numquam, architecto. Nisi id quidem maiores atque nihil. Autem, voluptatibus voluptatum explicabo, nobis saepe, rem corporis tempore laboriosam nulla facere possimus doloribus?
+					Quasi sunt, vel blanditiis ea aliquam veritatis alias expedita in sint quod, recusandae animi vero id nesciunt reprehenderit quam tempore repellat ad illum aspernatur accusamus itaque molestiae, labore ducimus maiores.
+					Omnis vero labore, dolore quis minima at odit asperiores facilis vel, ducimus inventore similique sapiente ipsum, iusto, ut. Qui illum error laudantium odio iure voluptates pariatur dignissimos, suscipit totam est.
+					Eum nisi asperiores earum, reiciendis illo vel totam, doloremque esse quaerat, cum aspernatur mollitia quod facere nulla. Nulla, natus obcaecati in rem repellendus voluptatibus accusantium, omnis praesentium. Magnam, exercitationem, at!
+					Sit iste impedit omnis minima illum debitis beatae vitae, ea quibusdam dolorem modi nihil, dignissimos itaque repellat consequatur voluptatibus cupiditate nostrum unde dolor nemo. Delectus odio similique laboriosam velit ullam!
+					Possimus nam aspernatur id sapiente quaerat recusandae consectetur sunt, a eveniet consequuntur aperiam fugit maxime doloribus corporis cupiditate adipisci dolorem inventore, vitae facilis voluptate ex! Quod distinctio rem, nulla tempora!
+					Quidem rem magnam, iure fugit consequatur deserunt iusto veniam aut maxime ullam doloremque dolor repellat ab dicta temporibus voluptatem nemo. Odit inventore aperiam optio rerum veniam molestias et. Dolor, reiciendis?
+					Accusamus ad, recusandae dolorem ut quos perferendis cum natus rerum explicabo vitae dolorum eveniet minima doloremque eaque ex iusto, et ipsa odio delectus quae omnis, provident aperiam. Dolore, dicta, eligendi.
+					Vitae voluptas nisi rerum corrupti aspernatur, optio eligendi quidem ad at dolore cum quo qui ratione minus? Nulla eum, cupiditate, commodi eveniet corrupti iste. Neque sed omnis veritatis, deserunt? Laboriosam.
+					Quos, doloribus. Voluptas eum voluptatum repellendus, voluptatem? Culpa quo, ipsum obcaecati, sapiente dolorem autem eius enim dolore similique dolores rem sequi quos labore repudiandae architecto ad distinctio, aliquam accusantium. Porro?
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius cupiditate, fuga expedita similique asperiores assumenda optio ullam blanditiis fugiat in temporibus quas sit beatae vero quos dicta nostrum repellendus dolorum!
+					Saepe aut distinctio quisquam, explicabo et quam blanditiis iure, fugiat, asperiores molestiae veniam ab. Corporis totam repudiandae tempora, reiciendis molestias repellat quaerat, non, minima perferendis officia dignissimos nam fugit eos.
+					Soluta mollitia aliquam magnam, illum eum a nesciunt deserunt blanditiis nostrum. Odit dicta, explicabo soluta ex fugit, saepe consequuntur, eum quam doloremque iste, aperiam aspernatur optio doloribus ipsum. Iste, veniam?
+					Adipisci voluptatem iure soluta aliquam, libero, harum totam quam enim voluptates. Beatae sed repudiandae est. Repellendus voluptates minus quisquam, soluta nemo officiis tempore labore laboriosam id ut tenetur consectetur facilis?
+					Est, ratione! Minima minus rem repellendus laboriosam ea, doloremque at nobis dolorem ab magnam est. Deleniti qui ipsum, sunt iusto neque itaque laborum, numquam cum beatae dicta a rem cumque.
+					Minima alias, impedit corporis veritatis aperiam, commodi? Blanditiis molestias, doloremque non deserunt. Nesciunt, quia tempore suscipit magni reprehenderit praesentium quisquam odio, ipsa dolores mollitia deserunt facere asperiores quo, reiciendis consectetur.
+					Esse, neque, omnis at tempore culpa, corrupti nisi beatae iure repellat molestiae ex id ea a cupiditate alias corporis! Temporibus dolorum enim accusantium, numquam, molestiae tempore consectetur voluptatem ea voluptas?
+					Blanditiis necessitatibus alias dolorem! Rerum placeat perspiciatis labore laudantium sapiente nobis quae exercitationem. Ullam consectetur inventore blanditiis vitae aspernatur cupiditate deleniti nesciunt voluptate amet delectus itaque et, dolorem libero possimus.
+					Accusantium necessitatibus tenetur, exercitationem vitae temporibus praesentium molestias neque dicta explicabo, dolorem numquam doloribus nemo obcaecati non accusamus repellat! Autem quos animi aspernatur nobis quaerat repudiandae excepturi dolorum quasi quibusdam.
+					Nihil cumque libero ullam molestias repellat ratione aut obcaecati earum. Repellat corrupti perferendis sit velit unde modi natus, officiis laborum quo illum nemo, vero totam laudantium eum, id minima soluta!
+					Quod distinctio fuga voluptate dolore vero saepe ipsam, quae iusto dolores quo at, architecto. Praesentium nobis atque quae odio dolores quam distinctio excepturi dicta? Maiores, asperiores, itaque? Voluptatem voluptate, quibusdam?
+					Dolor ullam id, ab delectus placeat culpa alias voluptate autem molestias aliquam quas voluptatem dolores earum non, dicta exercitationem ex est. Cum voluptatum quos dicta! Asperiores assumenda, error corrupti ab.
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div class="footer"></div>
+	<div class="footer">
+		<div class="footer-titile">Vàng Thị Thanh Thảo - K43CNTT1</div>
+	</div>
 	<script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>
