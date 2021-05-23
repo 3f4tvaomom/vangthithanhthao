@@ -14,6 +14,11 @@
 	font-weight: bold;
 	font-size: 1.2rem;
 	margin: 8px 0;
+	opacity: .8;
+	color: #fff;
+}
+.tim-kiem{
+	margin-bottom: 24px;
 }
 .tim-kiem-link{
 	color: #000;
@@ -22,19 +27,26 @@
 	border-bottom: 1px solid #000;
 	margin-bottom: 12px;
 	display: inline-block;
+	transition: transform .75s;
+}
+.tim-kiem-link:hover{
+	transform: scaleX(1.25) translateX(10px);
 }
 .thanh-tim-kiem-dl{
 	margin: 0 -12px;
 }
 .btn-tim-kiem{
+	color: rgba(255, 255, 255, .9);
 	outline: none;
 	background: #5E93FF;
 	border: none;
-	padding: 2px;
-	border-radius: 4px;
+	padding: 8px 4px;
+	border-radius: 5px;
 	margin: 0 -3px;
 	font-weight: bold;
 	box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+	border: 1px solid rgba(255, 255, 255, .5);
+	border-radius: 4px;
 }
 
 .nhap-goi{
@@ -45,9 +57,10 @@
 }
 .nhap-goi,
 .nhap-gia{
-	border-color: transparent transparent #5E93FF transparent;
-	padding: 8px 4px 0;
+	padding: 8px 4px;
 	outline: none;
 	background: #A6C3FF;
 	box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+	border: 1px solid rgba(255, 255, 255, .5);
+	border-radius: 5px;
 }

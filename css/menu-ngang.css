@@ -5,6 +5,7 @@
 	/*overflow: hidden;*/
 	position: fixed;
 	top: 0;
+	z-index: 9;
 }
 .thanh-chua{
 	display: flex;
@@ -31,12 +32,13 @@
 	font-family: 'Pattaya' !important;
 }
 .thong-tin-link:hover{
+	transition: .6s;
+	opacity: 0.6;
 	background: #218FFF;
 	transform: translateY(-15px);
 }
-.thong-tin-link ~ .thong-tin-link{
-	content: '';
-	border: 1px solid #000;
+.thong-tin ~ .thong-tin{
+	border-left: 1px solid #000;
 }
 .thanh-tim-kiem{
 	margin-left: auto;
