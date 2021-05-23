@@ -28,6 +28,7 @@
 	font-weight: bold;
 	color: #EEFAFF;
 	transition: transform .2s;
+	font-family: 'Pattaya' !important;
 }
 .thong-tin-link:hover{
 	background: #218FFF;
