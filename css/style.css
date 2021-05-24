@@ -21,11 +21,11 @@ input[type=submit]:not(input[disabled]){
 .the-du-lich-link{
 	display: inline-block;
 	border-radius: 4px;
-	overflow: hidden;
 	color: #000;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
   transition: .2s;
   margin-bottom: 12px;
+  position: relative;
 }
 .the-du-lich-link:hover{
 	transform: translate(2px, -2px);
@@ -34,6 +34,7 @@ input[type=submit]:not(input[disabled]){
 .anh-du-lich{
 	width: 100%;
 }
+
 .mo-ta-the{
 	padding: 8px;
 }
@@ -52,13 +53,68 @@ input[type=submit]:not(input[disabled]){
 .thoi-gian.khoi-hanh::after{
 	content: '!';
 }
+.anh-su-kien{
+	height: 362px;
+}
 .gia-du-lich{
 	font-weight: bold;
   font-style: italic;
   font-size: 1.5rem;
   color: #ff004f;
 }
-
+.product__item-favorite {
+  position: absolute;
+  top: 10px;
+  left: -4px;
+  color: #f99f30;
+  background: currentColor;
+  font-size: 1.2rem;
+  padding: 2px;
+  line-height: 1.6rem;
+  border-radius: 0 3px 3px 0;
+}
+.product__item-favorite::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  filter: brightness(60%);
+  border-right: 4px solid currentColor;
+  border-bottom: 3px solid transparent;
+}
+.product__item-sale {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: rgba(255, 216, 64, .9);
+  background: currentColor;
+  height: 62px;
+  width: 70px;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product__item-sale:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  border-width: 0 35px 4px;
+  border-style: solid;
+  border-color: transparent currentColor transparent currentColor;
+}
+.product__item-sale-percen {
+	font-size: 1.5rem;
+	font-weight: bold;
+  color: #ee4d2d;
+}
+.su-kien{
+	color: #fff;
+}
 .HotTourCap {
 	margin-top: 42px;
 	margin-bottom: 12px;
@@ -80,6 +136,89 @@ input[type=submit]:not(input[disabled]){
 	padding-right: 12px;
 	height: 132px;
 	font-size: 1rem !important;
+}
+
+.anh-gioi-thieu{
+	display: block;
+	margin: auto;
+	width: 800px;
+	max-width: 100%;
+	height: 400px;
+	max-height: 100%;
+}
+.tieu-de-anh{
+	text-align: center;
+	font-size: 1.1rem;
+	margin-bottom: 8px;
+	font-style: italic;
+}
+.thong-tin-dulich{
+	font-size: 1.2rem;
+	margin: 0 60px 18px 60px;
+}
+table{
+  width: 100%;
+}
+td{
+  text-align: right;
+  padding: 8px;
+}
+td:nth-child(even){
+	text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.hgbot {
+  border-top: 2px solid #5E5E5E;
+  background: #f3f3f3;
+  width: 100%;
+  margin: auto;
+  overflow: auto;
+  margin-bottom: 8px;
+}
+.hgbot .ctbot{
+	padding: 20px 20px;
+	float: left;
+	color: #5D5D5D;
+	width: 25%;
+	overflow: auto;
+}
+.hgbot .ctbot2{
+	padding: 20px 20px;
+	float: left;
+	color: #5D5D5D;
+	width: 16%;
+	overflow: auto;
+}
+.hgbot .ctbot a, .hgbot .ctbot2 a{
+	color: #5D5D5D;
+}
+.hgbot .ctbot a:hover, .hgbot .ctbot2 a:hover{
+	color: #FF0000;
+	text-decoration: none;
+}
+.hgbot .ctbot h1, .hgbot .ctbot2 h1{
+	font-size: 13px;
+	color: #E95505;
+	font-weight: bold;
+}
+.hgbot .ctbot b{
+	color: #5d5d5d;
+	font-size: 12px;
+}
+.hgbot .ctbot h2{
+	display: inline;
+	color: #000000;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+iframe{
+	width: 100%;
+	height: 50vh;
+	border: 1px solid #CCC;
 }
 .footer{
 	width: 100%;
